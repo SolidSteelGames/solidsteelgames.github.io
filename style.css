@@ -1,0 +1,72 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #fff;
+    color: #111;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    overflow: hidden
+}
+
+h1 {
+    font-size: clamp(2rem, 8vw, 3rem)
+}
+
+footer {
+    margin-top: 32px;
+    font-size: .9rem;
+        color: #777
+}
+
+.button {
+    margin-top: 24px;
+    padding: 12px 32px;
+    font-size: 1.1rem;
+    border: 2px solid #111;
+    background: transparent;
+    color: #111;
+    cursor: pointer;
+    border-radius: 6px;
+    text-decoration: none
+}
+
+.button:hover {
+    background: #d32f2f;
+    color: #fff
+}
+
+#tree {
+    font-size: 2rem;
+    opacity: 0;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer
+}
+/* Jolly button: small, top-left */
+.jolly-button {
+    position: fixed;
+    top: 12px;
+    left: 12px;
+    padding: 6px 10px;
+    font-size: .9rem;
+    border: 1px solid #111;
+    background: transparent;
+    color: #111;
+    cursor: pointer;
+    border-radius: 6px;
+    z-index: 1000;
+}
+
+.jolly-button:hover { background: #d32f2f; color: #fff }
