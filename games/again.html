@@ -43,16 +43,36 @@
             right: 20px;
             cursor: pointer;
         }
+
+        /* Jolly button: small, top-left */
+        .jolly-button {
+            position: fixed;
+            top: 12px;
+            left: 12px;
+            padding: 6px 10px;
+            font-size: .9rem;
+            border: 1px solid #111;
+            background: transparent;
+            color: #111;
+            cursor: pointer;
+            border-radius: 6px;
+            z-index: 1000;
+        }
+        .jolly-button:hover { background: #d32f2f; color: #fff }
     </style>
 </head>
 
 <body>
+    <button id="jolly-btn" class="jolly-button" aria-label="Play jolly audio">jolly</button>
+
     <h1 id="main-text">again.</h1>
     <div>
         <a href="https://phoenixpulze29.itch.io/again-2" class="button" target="_blank">play again.</a>
         <a href="../index.html" class="button">back to home</a>
     </div>
     <h2 id="tree">🎄</h2>
+
+    <audio id="jolly-audio" src="assets/jolly.mp3"></audio>
 
     <script>
         const t = document.getElementById("tree"),
@@ -63,13 +83,24 @@
               h = "merry christmas!",
               oF = "2025 titanium creations",
               fF = "2025 jolly titanium creations";
+
+        const jBtn = document.getElementById('jolly-btn'),
+              jAud = document.getElementById('jolly-audio');
+
+        if (jBtn && jAud) {
+            jBtn.addEventListener('click', () => {
+                jAud.currentTime = 0;
+                jAud.play();
+            });
+        }
+
         function n(x, y) { return x > window.innerWidth - 80 && y > window.innerHeight - 80 }
         document.addEventListener("mousemove", e => {
             if (n(e.clientX, e.clientY)) {
                 if (!t.style.opacity || t.style.opacity == "0") {
                     t.style.opacity = "1";
                     m.textContent = h;
-                    f.textContent = fF;
+                    if (f) f.textContent = fF;
                     b.style.background = "#ffe0e0";
                     b.style.color = "#d32f2f";
                 }
@@ -77,7 +108,7 @@
                 if (t.style.opacity == "1") {
                     t.style.opacity = "0";
                     m.textContent = o;
-                    f.textContent = oF;
+                    if (f) f.textContent = oF;
                     b.style.background = "#fff";
                     b.style.color = "#111";
                 }
