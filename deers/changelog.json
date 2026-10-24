@@ -14,11 +14,7 @@
         },
         {
           "type": "new",
-          "text": "Added Mod Browser"
-        },
-        {
-          "type": "new",
-          "text": "Added Custom Asset loading"
+          "text": "Added mod support"
         },
         {
           "type": "improved",
