@@ -7,8 +7,8 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    background: #fff;
-    color: #111;
+    background: #000000;
+    color: #d7780b;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -26,24 +26,24 @@ h1 {
 footer {
     margin-top: 32px;
     font-size: .9rem;
-        color: #777
+        color: #ffffff
 }
 
 .button {
     margin-top: 24px;
     padding: 12px 32px;
     font-size: 1.1rem;
-    border: 2px solid #111;
+    border: 2px solid #da9502;
     background: transparent;
-    color: #111;
+    color: #f6ad04;
     cursor: pointer;
     border-radius: 6px;
     text-decoration: none
 }
 
 .button:hover {
-    background: #d32f2f;
-    color: #fff
+    background: #ff8c00;
+    color: #000000
 }
 
 #tree {
@@ -61,12 +61,12 @@ footer {
     left: 12px;
     padding: 6px 10px;
     font-size: .9rem;
-    border: 1px solid #111;
+    border: 1px solid #d8d7d7;
     background: transparent;
-    color: #111;
+    color: #ff7b00;
     cursor: pointer;
     border-radius: 6px;
     z-index: 1000;
 }
 
-.jolly-button:hover { background: #d32f2f; color: #fff }
+.jolly-button:hover { background: #ffbf00; color: #000000 }

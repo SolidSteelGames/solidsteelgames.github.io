@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "game": "Deer Simulator 3D",
+  "entries": [
+    {
+      "version": "1.2.0",
+      "date": "2026-10-24",
+      "title": "All over the World",
+      "summary": "",
+      "changes": [
+        {
+          "type": "new",
+          "text": "Added localization support"
+        },
+        {
+          "type": "new",
+          "text": "Added Mod Browser"
+        },
+        {
+          "type": "new",
+          "text": "Added Custom Asset loading"
+        },
+        {
+          "type": "improved",
+          "text": "Improved the UI for better mobile support"
+        },
+        {
+          "type": "fixed",
+          "text": "The scene would change before the boss finished death and would cause a crash when changing to the victory screen"
+        }
+      ]
+    }
+  ]
+}

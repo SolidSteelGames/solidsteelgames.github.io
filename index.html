@@ -9,15 +9,15 @@
 </head>
 
 <body>
-    <button id="jolly-btn" class="jolly-button" aria-label="Play jolly audio">jolly</button>
+    <button id="jolly-btn" class="jolly-button" aria-label="Play SPOOKY audio">spooky</button>
     <h1 id="main-text">coming soon.</h1>
-    <a href="games/again.html" class="button">play again.</a>
-    <footer id="footer-text">2026 titanium creations</footer>
-    <h2 id="tree">🎄</h2>
-    <audio id="jolly-audio" src="/assets/jolly.mp3"></audio>
+    <a href="games/again.html" class="button">PLAY AGAIN.</a>
+    <a href="games/deers.html" class="button">DOWNLOAD DEER SIMULATOR</a>
+    <footer id="footer-text">2026 Solid Steel Games</footer>
+    <audio id="jolly-audio" src="/assets/spooky.mp3"></audio>
     <script>
-       const jBtn = document.getElementById('jolly-btn'),
-              jAud = document.getElementById('jolly-audio');
+        const jBtn = document.getElementById('jolly-btn'),
+            jAud = document.getElementById('jolly-audio');
 
         if (jBtn && jAud) {
             jBtn.addEventListener('click', () => {
@@ -25,8 +25,8 @@
                 jAud.play();
             });
         }
-    
-    const t = document.getElementById("tree"), m = document.getElementById("main-text"), f = document.getElementById("footer-text"), b = document.body, o = "coming soon.", h = "merry christmas!", oF = "2025 titanium creations", fF = "2025 jolly titanium creations"; function n(x, y) { return x > window.innerWidth - 80 && y > window.innerHeight - 80 } document.addEventListener("mousemove", e => { if (n(e.clientX, e.clientY)) { if (!t.style.opacity || t.style.opacity == "0") { t.style.opacity = "1"; m.textContent = h; f.textContent = fF; b.style.background = "#ffe0e0"; b.style.color = "#d32f2f" } } else { if (t.style.opacity == "1") { t.style.opacity = "0"; m.textContent = o; f.textContent = oF; b.style.background = "#fff"; b.style.color = "#111" } } });</script>
+
+       function n(x, y) { return x > window.innerWidth - 80 && y > window.innerHeight - 80 } document.addEventListener("mousemove", e => { if (n(e.clientX, e.clientY)) { if (!t.style.opacity || t.style.opacity == "0") { t.style.opacity = "1"; m.textContent = h; f.textContent = fF; b.style.background = "#ffe0e0"; b.style.color = "#d32f2f" } } else { if (t.style.opacity == "1") { t.style.opacity = "0"; m.textContent = o; f.textContent = oF; b.style.background = "#fff"; b.style.color = "#111" } } });</script>
 </body>
 
 </html>
