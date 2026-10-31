@@ -14,7 +14,11 @@
         },
         {
           "type": "new",
-          "text": "Added mod support"
+          "text": "Added option to turn off pixel filter"
+        },
+        {
+          "type": "language",
+          "text": "Added English, Bulgarian, Polish, Sinhala, Romanian"
         },
         {
           "type": "improved",
@@ -23,6 +27,10 @@
         {
           "type": "fixed",
           "text": "The scene would change before the boss finished death and would cause a crash when changing to the victory screen"
+        },
+        {
+          "type": "fixed",
+          "text": "Treetops wouldnt attack the player"
         }
       ]
     }
